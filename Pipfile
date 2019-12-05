@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+pylint = "*"
+pep8 = "*"
+
+[packages]
+django = "==2.2.4"
+djangorestframework = "*"
+requests = "*"
+python-dotenv = "*"
+django-axes = "*"
+djangorestframework-simplejwt = "*"
+django-amazon-ses = "*"
+pyyaml = "*"
+mysqlclient = "*"
+simplejson = "*"
+urllib3 = "*"
+python-logstash = "*"
+
+[requires]
+python_version = "3.5"

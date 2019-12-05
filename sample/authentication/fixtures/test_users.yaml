@@ -1,0 +1,16 @@
+- model: authentication.user
+  uuid: '3d4b523b00bb44dfb14d409bf770a00f'
+  fields:
+    email: 'test2@test.com'
+    password: 'Abcd123@'
+    created_at: 2019-08-21 00:00:00
+    updated_at: 2019-08-21 00:00:00
+
+- model: authentication.user
+  uuid: "8bdc587a20954a4ea841321dfebdc7bb"
+  fields:
+    email: 'test2@test.com'
+    password: 'Abcd123@'
+    created_at: 2019-08-21 00:00:00
+    updated_at: 2019-08-21 00:00:00
+        
