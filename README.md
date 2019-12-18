@@ -24,4 +24,14 @@ virtualenv or pipenv.
 - In update user detail, only role can be updated.
 
 ## Testing
-To test, use `manage.py test`
+Install the webdrivers first before running the selenium testing
+`sudo apt-get install chromium-chromedriver`
+
+To test the APIs, use `manage.py test`
+For the selenium, use `manage.py test authentication.test_web`
+
+## Test Notes
+- Although this repo does not have any Frontend (could be added in the future), the selenium script
+shows my implementation. There are other ways to implement the code so this just serves as reference.
+- The `test_web.py` was used to test a certain domain so elements should be edited to support the other websites.
+- The Selenium part was done in WSL (Ubuntu).

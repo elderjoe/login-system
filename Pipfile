@@ -20,6 +20,8 @@ mysqlclient = "*"
 simplejson = "*"
 urllib3 = "*"
 python-logstash = "*"
+selenium = "*"
+openpyxl = "*"
 
 [requires]
 python_version = "3.5"
