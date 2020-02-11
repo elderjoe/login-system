@@ -6,9 +6,11 @@ name = "pypi"
 [dev-packages]
 pylint = "*"
 pep8 = "*"
+pytest = "*"
+flake8 = "*"
 
 [packages]
-django = "==2.2.8"
+django = "==2.2.9"
 djangorestframework = "*"
 requests = "*"
 python-dotenv = "*"
@@ -24,4 +26,4 @@ selenium = "*"
 openpyxl = "*"
 
 [requires]
-python_version = "3.5"
+python_version = "3.6"

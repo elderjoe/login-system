@@ -20,7 +20,7 @@ from .serializers import (
     PasswordChangeSerializer,
     ChangeRoleSerializer,
 )
-from axes.attempts import is_already_locked
+from axes.handlers.proxy import AxesProxyHandler
 from rest_framework_simplejwt.tokens import RefreshToken
 from utils.messages import ERR, SCS, EMAIL
 from utils.custom_exceptions import InternalError
@@ -87,7 +87,7 @@ class APILogin(APIView):
         except ValidationError:
             raise
         except Exception as e:
-            if is_already_locked(request):
+            if AxesProxyHandler().is_locked(request):
                 raise PermissionDenied(ERR.PERMISSION_DENIED)
             else:
                 raise InternalError(ERR.SERVER_ERROR, str(e))
