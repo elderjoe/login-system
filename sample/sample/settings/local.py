@@ -14,9 +14,9 @@ DATABASES = {
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
         },
-        'USER': 'test_user',
+        'USER': 'user',
         'PASSWORD': 'somepass',
-        'HOST': '10.0.75.1',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
 }
