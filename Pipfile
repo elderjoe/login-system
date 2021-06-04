@@ -10,7 +10,7 @@ pytest = "*"
 flake8 = "*"
 
 [packages]
-django = "==2.2.13"
+django = "==2.2.21"
 djangorestframework = "*"
 requests = "*"
 python-dotenv = "*"
